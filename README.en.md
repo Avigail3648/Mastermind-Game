@@ -4,8 +4,6 @@
 
 ### Technologies Used
 - **Frontend**: Built with Angular, HTML, and CSS.
-- **Backend**: None.
-- **Database**: None.
 
 ### Local Setup Instructions  
 To run the project locally, follow these steps:
