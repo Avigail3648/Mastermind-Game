@@ -1,0 +1,22 @@
+<div class="body">
+    <br>
+    <div class="allColors">
+        @for(color of allColors; track $index){
+        <button class="singlColor" (click)="setColorChoice(color)" style="background-color: {{color}};"></button>
+        }
+    </div><br><br>
+    <div class="allQuestionSign">
+        @for(i of indexes;track $index){
+        <button class="questionSign" style="background-color:rgb(236, 235, 213);">
+            <h1>?</h1>
+        </button>
+        }
+    </div><br>
+    <div class="row">
+        <app-player-choices #inserColor (queueFinished)="isqueueFinished($event)" class="col"></app-player-choices>
+        @if(lineFinished.length!=0 || firstRenderScore==true){
+        <app-score-game #score [currentLine]="lineFinished" [colorsForGuess]="colorsToGuess"
+            class="col"></app-score-game>
+        }
+    </div><br>
+</div>

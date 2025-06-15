@@ -1,0 +1,15 @@
+.allMatrixScore{
+    width: 70px;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+.circleInRectangle{
+    border-radius: 12px;
+    border-color:solid black;
+    height: 24px;
+    width: 24px;
+    margin-right: 5px;
+    border: 3.4px solid  rgb(209, 194, 98);
+    margin-bottom: 3.8px;
+}

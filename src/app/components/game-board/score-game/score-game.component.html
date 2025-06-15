@@ -1,0 +1,8 @@
+<div class="allMatrixScore">
+    @for(row of matrixScore; track $index){
+        @for(col of row; track $index){
+             <button class="circleInRectangle" [ngStyle]="{'background-color':col} "></button>
+        }
+        <br><br>
+    }
+</div>

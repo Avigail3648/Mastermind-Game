@@ -1,0 +1,8 @@
+<div class="allMatrix">
+      @for(rowColor of selectionMatrix; track $index){
+      @for(colColor of rowColor; track $index){
+      <button class="circleInMat" [ngStyle]="{'background-color':colColor} "></button>
+      }
+      <br>
+      }
+</div><br>
